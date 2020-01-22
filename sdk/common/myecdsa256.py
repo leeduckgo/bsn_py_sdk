@@ -17,7 +17,6 @@ def ecdsa_sign(message, pri_key_file_name):
 	# Read the pri_key_file
 	path = os.path.abspath('.')
 	file = os.path.join(path, pri_key_file_name)
-	print('私钥目录路径: ', file)
 	pri_key_file = open(file, "rb")
 	key_data = pri_key_file.read()
 	pri_key_file.close()
@@ -44,7 +43,6 @@ def ecdsa_verify(message, signature, pub_key_file):
 	# 读取公钥内容
 	path = os.path.abspath('.')
 	file = os.path.join(path, pub_key_file)
-	print('网关公钥目录路径: ', file)
 	pub_key_file = open(file, "rb")
 	key_data = pub_key_file.read()
 	pub_key_file.close()

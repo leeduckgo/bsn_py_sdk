@@ -1,6 +1,6 @@
 import requests
-from sdk.common.loggers import logger
-from sdk.common import myecdsa256
+from .common.loggers import logger
+from .common import myecdsa256
 import json
 import configparser
 

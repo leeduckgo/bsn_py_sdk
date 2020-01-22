@@ -1,57 +1,62 @@
 import requests
-from common.loggers import logger
-from common import myecdsa256
+from sdk.common.loggers import logger
+from sdk.common import myecdsa256
 import json
-
+import configparser
 
 class Operator:
     '''
+        init.
+    '''
+    def __init__(self, userCode, appCode, chainCode, url, cert_path):
+        self.userCode = userCode
+        self.appCode = appCode
+        self.chainCode = chainCode
+        self.url = url
+        self.cert_path = cert_path
+
+    '''
         public functions.
     '''
-    def get_data(self, baseKey, url):
-        userCode = "reddate"
-        appCode = "CL1851016378620191011150518"
-        chainCode = "cc_base"
+    def get_data(self, baseKey):
         funcName = "get"
 
-        return self.__do_get(userCode, appCode, chainCode, funcName, baseKey, url)
-
-    def save_data(self, baseKey, baseInfo, url):
-        userCode = "reddate"
-        appCode = "CL1851016378620191011150518"
-        chainCode = "cc_base"
-        funcName = "set"
-
-        return self.__do_set(userCode, appCode, chainCode, funcName, baseKey, baseInfo, url)        
-
-    def update_data(self, baseKey, baseInfo, url):
-        userCode = "reddate"
-        appCode = "CL1851016378620191011150518"
-        chainCode = "cc_base"
-        funcName = "update"
-
-        return self.__do_set(userCode, appCode, chainCode, funcName, baseKey, baseInfo, url)
+        return self.__do_get(self.userCode, self.appCode,
+        self.chainCode, self.url, 
+        self.cert_path, funcName, baseKey)
     
-    def delete_data(self, baseKey, url):
-        userCode = "reddate"
-        appCode = "CL1851016378620191011150518"
-        chainCode = "cc_base"
+    def delete_data(self, baseKey):
         funcName = "delete"
         
-        return self.__do_get(userCode, appCode, chainCode, funcName, baseKey, url)
+        return self.__do_get(self.userCode, self.appCode,
+        self.chainCode, self.url, 
+        self.cert_path, funcName, baseKey)
     
-    def get_history(self, baseKey, url):
-        userCode = "reddate"
-        appCode = "CL1851016378620191011150518"
-        chainCode = "cc_base"
+    def get_history(self, baseKey):
         funcName = "getHistory"
 
-        return self.__do_get(userCode, appCode, chainCode, funcName, baseKey, url)
+        return self.__do_get(self.userCode, self.appCode,
+        self.chainCode, self.url, 
+        self.cert_path, funcName, baseKey)
+
+    def save_data(self, baseKey, baseInfo):
+        funcName = "set"
+
+        return self.__do_set(self.userCode, self.appCode,
+        self.chainCode, self.url, self.cert_path, 
+        funcName, baseKey, baseInfo)        
+
+    def update_data(self, baseKey, baseInfo):
+        funcName = "update"
+
+        return self.__do_set(self.userCode, self.appCode,
+        self.chainCode, self.url, self.cert_path,
+        funcName, baseKey, baseInfo)
        
     '''
         private functions.
     '''
-    def __do_get(self, userCode, appCode, chainCode, funcName, baseKey, url):
+    def __do_get(self, userCode, appCode, chainCode,url, funcName, baseKey):
         if len(baseKey.strip()) == 0:
             logger.error("baseKey can not be null")
         else:
@@ -69,14 +74,14 @@ class Operator:
             res = requests.post(url, headers=headers, json=data, verify='./certificate/bsn_https.pem')
             return res.json()
 
-    def __do_set(self, userCode, appCode, chainCode, funcName, baseKey, baseInfo, url):
+    def __do_set(self, userCode, appCode, chainCode, url, funcName, baseKey, baseInfo):
         if len(baseKey.strip()) == 0:
             logger.error("baseKey can not be null")
         elif len(baseInfo.strip()) == 0:
             logger.error("baseInfo can not be null")
         else:
             logger.info('输入的baseKey：%s', baseKey)
-            logger.info('输入的baseKey：%s', baseKey)
+            logger.info('输入的baseInfo：%s', baseInfo)
             list = {"baseKey": baseKey, "baseValue": baseInfo}
             list = json.dumps(list)
             payload = userCode + appCode + chainCode + funcName + list

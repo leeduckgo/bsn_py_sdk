@@ -2,7 +2,7 @@
 
 **Author: 李大狗Leeduckgo**
 
-**Org: 上海对外经贸大学人工智能与变革管理学院区块链技术与应用研究中心**
+**Org: 上海对外经贸大学·人工智能与变革管理学院·区块链技术与应用研究中心**
 
 bsn-python-sdk is a Python library for communicating with [Blockchain Service Network](https://www.bsnbase.com/), It is used for building blockchain Apps with BSN.
 

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>消费与查询</title>
+    <link rel = "stylesheet" href = "{{ url_for('static', filename='index.css') }}" />
+    <!--<script src = "{{ url_for('static', filename='index.js') }}" />-->
+  </head>
+  <body>
+    <form method="post" name = "from">
+    <div class="box">
+      <div class="bd">
+        <select class="form-control" id="exampleFormControlSelect1">
+          <option>连锁店 A</option>
+          <option>连锁店 B</option>
+          <option>连锁店 C</option>
+        </select>
+      </div>
+      <div class="main">
+        <div class="input-group mb-3" style="width: 200px;float: left;">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">用户</span>
+          </div>
+          <input
+            name="user_name"
+            type="text"
+            class="form-control"
+            placeholder="Username"
+            aria-label="Username"
+            aria-describedby="basic-addon1"
+          />
+        </div>
+      </div>
+
+      <div class="submain">
+        <div class="input-group mb-3" style="width: 200px;float: left;">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">密码</span>
+            </div>
+            <input
+              name="password"
+              type="text"
+              class="form-control"
+              placeholder="Password"
+              aria-label="Password"
+              aria-describedby="basic-addon1"
+            />
+        </div>
+      </div>
+
+      <div class="submain">
+          <div class="input-group mb-3" style="width: 200px;float: left;">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">金额</span>
+              </div>
+              <input
+                name="money"
+                type="text"
+                class="form-control"
+                placeholder="Money"
+                aria-label="Money"
+                aria-describedby="basic-addon1"
+              />
+          </div>
+      </div>
+
+      <div class="ft">
+        <div class="col1" style="cursor: pointer;" onclick="queryAction()">
+          <span class="tag">
+            查询余额
+          </span>
+        </div>
+        </a>
+
+        <div class="col2" style="cursor: pointer;" onclick="payAction()">
+          <span class="tag_2">
+            消费
+          </span>
+        </div>
+      </div>
+    </div>
+
+    </form>
+
+    <script type="text/javascript">
+      function queryAction(){
+          console.log(document.form)
+          document.from.action="query";//提交的url
+          document.from.submit();
+      }
+
+      function payAction(){
+          console.log("pay")
+          document.from.action="pay";//提交的url
+          document.from.submit();
+      }
+    </script>
+
+  </body>
+</html>

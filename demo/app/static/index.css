@@ -1,0 +1,228 @@
+.box {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 1024px;
+}
+.box .bd {
+  box-sizing: border-box;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 55px;
+  margin-left: 758px;
+
+  padding-right: 5px;
+  padding-left: 5px;
+  width: 127px;
+  height: 36px;
+}
+.box .outer {
+  display: flex;
+  flex-direction: row;
+}
+.box .canteen {
+  line-height: 20px;
+  color: #4a4a4a;
+  font-size: 14px;
+  font-weight: 400;
+}
+.box .word {
+  text-indent: 4;
+  line-height: 17px;
+  color: #4a4a4a;
+  font-family: AvenirNext-Regular, Avenir Next;
+  font-size: 14px;
+  font-weight: 400;
+}
+.box .block {
+  display: flex;
+  flex-direction: row;
+}
+.box .wrap {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 16px;
+}
+.box .dot {
+  filter: drop-shadow(0px 1px 0px rgba(255, 255, 255, 1.00));
+  margin-top: 3px;
+  width: 4px;
+  height: 5px;
+}
+.box .dot_2 {
+  filter: drop-shadow(0px 1px 0px rgba(255, 255, 255, 1.00));
+  margin-top: 6px;
+  width: 4px;
+  height: 5px;
+}
+.box .main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 38px;
+  width: 1023px;
+}
+.box .accountNumber {
+  margin-top: 2px;
+  width: 54px;
+  height: 26px;
+  line-height: 26px;
+  color: #4a4a4a;
+  font-size: 18px;
+  font-weight: 400;
+}
+.box .aliceWrap {
+  box-sizing: border-box;
+  display: flex;
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.50);
+  align-items: center;
+  flex-direction: row;
+  margin-left: 9px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  border-color: rgba(151,151,151,1.00);
+  background-color: #ffffff;
+  width: 300px;
+  height: 36px;
+}
+.box .alice {
+  margin-left: 10px;
+  line-height: 17px;
+  color: #4a4a4a;
+  font-family: AvenirNext-Regular, Avenir Next;
+  font-size: 14px;
+  font-weight: 400;
+}
+.box .submain {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 32px;
+  width: 1023px;
+}
+.box .password {
+  margin-top: 2px;
+  width: 54px;
+  height: 26px;
+  line-height: 26px;
+  color: #4a4a4a;
+  font-size: 18px;
+  font-weight: 400;
+}
+.box .container {
+  box-sizing: border-box;
+  display: flex;
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.50);
+  align-items: center;
+  flex-direction: row;
+  margin-left: 9px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  border-color: rgba(151,151,151,1.00);
+  background-color: #ffffff;
+  width: 300px;
+  height: 36px;
+}
+.box .txt {
+  margin-left: 10px;
+  line-height: 17px;
+  color: #4a4a4a;
+  font-family: AvenirNext-Regular, Avenir Next;
+  font-size: 14px;
+  font-weight: 400;
+}
+.box .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 31px;
+  width: 1023px;
+}
+.box .amount {
+  margin-top: 2px;
+  width: 54px;
+  height: 26px;
+  line-height: 26px;
+  color: #4a4a4a;
+  font-size: 18px;
+  font-weight: 400;
+}
+.box .outer_2 {
+  box-sizing: border-box;
+  display: flex;
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.50);
+  align-items: center;
+  flex-direction: row;
+  margin-left: 9px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+  border-color: rgba(151,151,151,1.00);
+  background-color: #ffffff;
+  width: 300px;
+  height: 36px;
+}
+.box .num {
+  margin-left: 10px;
+  line-height: 17px;
+  color: #4a4a4a;
+  font-family: AvenirNext-Regular, Avenir Next;
+  font-size: 14px;
+  font-weight: 400;
+}
+.box .ft {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 27px;
+  padding-right: 329px;
+  padding-left: 331px;
+  width: 1024px;
+}
+.box .col1 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: #f19e9b;
+  width: 150px;
+  height: 60px;
+}
+.box .tag {
+  max-width: 138px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 25px;
+  letter-spacing: 1.5;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+}
+.box .col2 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: #fbd769;
+  width: 150px;
+  height: 60px;
+}
+.box .tag_2 {
+  max-width: 138px;
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+  line-height: 25px;
+  letter-spacing: 1.5;
+  color: #696774;
+  font-size: 18px;
+  font-weight: 500;
+}

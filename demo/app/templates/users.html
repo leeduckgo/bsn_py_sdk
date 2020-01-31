@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>对user表的操作</title>
+</head>
+<body>
+<hr color="red">
+<h1>查询用户</h1>
+<div>
+     <form METHOD="POST">
+    请输入想要查找用户的full_name:<input type="text" name="selname"/><br>
+    <input type="submit",value="删除用户"/>
+    </form>
+</div>
+<hr color="pink">
+<h1>添加用户</h1>
+<div>
+    <form method="post">
+    请输入想要添加用户的full_name:<input type="text" name="full_name"/><br>
+    请输入想要添加用户的student_id:<input type="text" name="student_id"/><br>
+    请输入想要添加用户的orgs_id:<input type="text"  name="orgs_id"/><br>
+    <input type="submit",value="保存用户"/>
+</form>
+</div>
+
+<hr color="blue">
+<h1>删除用户</h1>
+<div border="1px">
+    <form METHOD="POST">
+    请输入想要删除用户的full_name:<input type="text" name="delname"/><br>
+    <input type="submit",value="删除用户"/>
+</form>
+</div>
+<hr color="green">
+<h1>修改用户</h1>
+<div>
+    <form METHOD="POST">
+    请输入想要修改用户的full_name:<input type="text" name="upname"/><br>
+    请输入用户的新用户的full_name:<input type="text" name="newfull_name"/><br>
+    请输入用户的新用户的student_id:<input type="text" name="newstudent_id"/><br>
+    请输入用户的新用户的orgs_id:<input type="text"  name="neworgs_id"/><br>
+    <input type="submit",value="修改用户"/>
+</form>
+</div>
+</body>
+</html>

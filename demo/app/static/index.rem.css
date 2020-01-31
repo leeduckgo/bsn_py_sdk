@@ -1,0 +1,233 @@
+/* 视觉稿宽度为 750, 请设置html的font-size为 37.5px, 以便在布局视口宽度为 375 的页面中自适应 */
+.box {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 13.65rem;
+}
+.bd {
+  box-sizing: border-box;
+  justify-content: space-between;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.20), inset 0px 2px 0px rgba(255, 255, 255, 1.00);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 0.73rem;
+  margin-left: 10.11rem;
+  border-width: 0.01rem;
+  border-style: solid;
+  border-radius: 0.04rem;
+  border-color: rgba(151,151,151,1.00);
+  padding-right: 0.07rem;
+  padding-left: 0.07rem;
+  width: 1.69rem;
+  height: 0.48rem;
+}
+.outer {
+  display: flex;
+  flex-direction: row;
+}
+.canteen {
+  line-height: 0.27rem;
+  color: #4a4a4a;
+  font-size: 0.19rem;
+  font-weight: 400;
+}
+.word {
+  text-indent: 0.05rem;
+  line-height: 0.23rem;
+  color: #4a4a4a;
+  font-family: AvenirNext-Regular, Avenir Next;
+  font-size: 0.19rem;
+  font-weight: 400;
+}
+.block {
+  display: flex;
+  flex-direction: row;
+}
+.wrap {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 0.21rem;
+}
+.dot {
+  filter: drop-shadow(0px 1px 0px rgba(255, 255, 255, 1.00));
+  margin-top: 0.04rem;
+  width: 0.05rem;
+  height: 0.07rem;
+}
+.dot_2 {
+  filter: drop-shadow(0px 1px 0px rgba(255, 255, 255, 1.00));
+  margin-top: 0.08rem;
+  width: 0.05rem;
+  height: 0.07rem;
+}
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 0.51rem;
+  width: 13.64rem;
+}
+.accountNumber {
+  margin-top: 0.03rem;
+  width: 0.72rem;
+  height: 0.35rem;
+  line-height: 0.35rem;
+  color: #4a4a4a;
+  font-size: 0.24rem;
+  font-weight: 400;
+}
+.aliceWrap {
+  box-sizing: border-box;
+  display: flex;
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.50);
+  align-items: center;
+  flex-direction: row;
+  margin-left: 0.12rem;
+  border-width: 0.01rem;
+  border-style: solid;
+  border-radius: 0.04rem;
+  border-color: rgba(151,151,151,1.00);
+  background-color: #ffffff;
+  width: 4rem;
+  height: 0.48rem;
+}
+.alice {
+  margin-left: 0.13rem;
+  line-height: 0.23rem;
+  color: #4a4a4a;
+  font-family: AvenirNext-Regular, Avenir Next;
+  font-size: 0.19rem;
+  font-weight: 400;
+}
+.submain {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 0.43rem;
+  width: 13.64rem;
+}
+.password {
+  margin-top: 0.03rem;
+  width: 0.72rem;
+  height: 0.35rem;
+  line-height: 0.35rem;
+  color: #4a4a4a;
+  font-size: 0.24rem;
+  font-weight: 400;
+}
+.container {
+  box-sizing: border-box;
+  display: flex;
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.50);
+  align-items: center;
+  flex-direction: row;
+  margin-left: 0.12rem;
+  border-width: 0.01rem;
+  border-style: solid;
+  border-radius: 0.04rem;
+  border-color: rgba(151,151,151,1.00);
+  background-color: #ffffff;
+  width: 4rem;
+  height: 0.48rem;
+}
+.txt {
+  margin-left: 0.13rem;
+  line-height: 0.23rem;
+  color: #4a4a4a;
+  font-family: AvenirNext-Regular, Avenir Next;
+  font-size: 0.19rem;
+  font-weight: 400;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 0.41rem;
+  width: 13.64rem;
+}
+.amount {
+  margin-top: 0.03rem;
+  width: 0.72rem;
+  height: 0.35rem;
+  line-height: 0.35rem;
+  color: #4a4a4a;
+  font-size: 0.24rem;
+  font-weight: 400;
+}
+.outer_2 {
+  box-sizing: border-box;
+  display: flex;
+  box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.50);
+  align-items: center;
+  flex-direction: row;
+  margin-left: 0.12rem;
+  border-width: 0.01rem;
+  border-style: solid;
+  border-radius: 0.04rem;
+  border-color: rgba(151,151,151,1.00);
+  background-color: #ffffff;
+  width: 4rem;
+  height: 0.48rem;
+}
+.num {
+  margin-left: 0.13rem;
+  line-height: 0.23rem;
+  color: #4a4a4a;
+  font-family: AvenirNext-Regular, Avenir Next;
+  font-size: 0.19rem;
+  font-weight: 400;
+}
+.ft {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 0.36rem;
+  padding-right: 4.39rem;
+  padding-left: 4.41rem;
+  width: 13.65rem;
+}
+.col1 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 0.13rem;
+  background-color: #f19e9b;
+  width: 2rem;
+  height: 0.8rem;
+}
+.tag {
+  max-width: 1.84rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 0.33rem;
+  letter-spacing: 0.02rem;
+  color: #ffffff;
+  font-size: 0.24rem;
+  font-weight: 500;
+}
+.col2 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  border-radius: 0.13rem;
+  background-color: #fbd769;
+  width: 2rem;
+  height: 0.8rem;
+}
+.tag_2 {
+  max-width: 1.84rem;
+  overflow: hidden;
+  text-align: center;
+  text-overflow: ellipsis;
+  line-height: 0.33rem;
+  letter-spacing: 0.02rem;
+  color: #696774;
+  font-size: 0.24rem;
+  font-weight: 500;
+}
